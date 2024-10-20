@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="button" onclick="login ()" id="submit" value="login">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+            <p id="text_shown"> suggestion Text</p>
+        </div>
+    </div>
+    <script>
+
+   function login (){    
+
+    let username =document.getElementbyId("username").value;
+
+    let password2=document.getElementbyId("password").value;
+
+    let text_show=document.getElementbyId("text_shown"); 
+
+
+    let website_username="paras";
+    let website_password="123456"
+
+    if(  username ==  website_username && password2 == website_password)
+
+
+    window.location="index.html"    
+
+
+   }
+    </script>
+</body>
+</html>
